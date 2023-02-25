@@ -9,7 +9,7 @@ const Home = () => {
       <div id="allLeftWrap">
         <div id="textAreaHome">
           <div id="upperText">
-            <span>Revolutionizing</span> the food supply chain for a better
+            <span id="highLightText">Revolutionizing</span> the food supply chain for a better
             tomorrow.
           </div>
           <div id="lowerText">

@@ -169,7 +169,7 @@ const Navbar = () => {
   const routes = [
     {
       name: "Home",
-      link: "/app/doctor/markvisit",
+      link: "/",
     },
     {
       name: "About Us",
@@ -182,7 +182,7 @@ const Navbar = () => {
   ];
 
   const activeStyle = {
-    background: "#edf2f7",
+    borderBottom:"2px solid #217D4D"
   };
   return (
     <div className="navBarWrapper">
@@ -199,7 +199,7 @@ const Navbar = () => {
                 to={route.link}
                 key={key}
                 _hover={{
-                  background: "rgba(130, 170, 227, 0.49)",
+                  borderBottom:"2px solid #217D4D"
                 }}
                 style={({ isActive }) => (isActive ? activeStyle : undefined)}
               >
@@ -223,7 +223,7 @@ const Navbar = () => {
               </Button>
             )}
             {accounts && (
-              <Box padding={2} borderRadius={10} borderColor="grey">
+              <Box padding={2} borderRadius={10} borderColor="grey" id="addressDisplay">
                 {" "}
                 Wallet: {accounts.slice(0, 6)}...{accounts.slice(-4)}{" "}
               </Box>

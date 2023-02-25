@@ -24,9 +24,7 @@
 #upperText{
     font-size: 1.5rem;
 }
-#upperText span{
-    color:#1D5E2F
-}
+
 #lowerText{
     font-size: 1rem;
 }
@@ -44,4 +42,8 @@
     display: flex;
     justify-content: space-between;
     width: 70%;
+}
+#highLightText{
+    color:#1D5E2F
+
 }

@@ -21,10 +21,14 @@
 #connectToWalletButton{
     width:8vw;
     font-size:0.8rem;
+    color:white;
 }
 #linkHolder{
     display: flex;
     align-items: center;
     width:65vw;
     justify-content: flex-end;
+}
+#addressDisplay{
+    border:1px solid #1D5E2F;
 }
