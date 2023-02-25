@@ -5,7 +5,7 @@ contract Farmers{
 
     // STATE VARIABLES DECLARATION
     
-    address owner;
+    address public owner;
     mapping (uint256=>string) priceURIs;
     mapping (address=>uint256) verifiedGovernmentOfficials;
     mapping (address=>string) farmerPriceUri;

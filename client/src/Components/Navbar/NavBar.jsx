@@ -82,7 +82,7 @@ const Navbar = () => {
       window.location.reload();
     }
     const provider = new ethers.providers.JsonRpcProvider(ethereum);
-
+    console.log(provider);
     const signer = provider.getSigner();
     dispatch(updateSigner(signer));
     setsigner(signer);
@@ -148,7 +148,10 @@ const Navbar = () => {
       );
     }
   };
-
+  let iC;
+  const me = async() =>{
+    console.log(await iC.owner());
+  }
   useEffect(() => {
     try {
       if (address != "0x0") {
@@ -158,7 +161,9 @@ const Navbar = () => {
           signer
         );
         console.log(contractInstance);
+        iC=contractInstance;
         dispatch(updateInstance(contractInstance));
+        me();
       }
     } catch (error) {
       console.log(error);

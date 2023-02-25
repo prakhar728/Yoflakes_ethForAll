@@ -46,7 +46,13 @@ const Admin = () => {
       }
       console.log(result);
       console.log(instancesContract.signer);
-      await(await instancesContract.verifyGovernmentOfficial(details.address)).wait();
+      try {
+        
+        console.log("Conctract owner",await instancesContract.owner()) 
+        await(await instancesContract.verifyGovernmentOfficial(details.address)).wait();
+      } catch (error) {
+        console.log(error);
+      }
     }
     else if(modalTitleNumber==1){
       result={
