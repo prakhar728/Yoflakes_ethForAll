@@ -72,7 +72,7 @@ const Navbar = () => {
     }
     // This is the new part, we check the user's network chain ID
     const chainId = await ethereum.request({ method: "eth_chainId" });
-    if (chainId != "0x539") await switchNetwork();
+    if (chainId != "0x13881") await switchNetwork();
     setNetwork(networks[chainId]);
 
     ethereum.on("chainChanged", handleChainChanged);
@@ -101,7 +101,7 @@ const Navbar = () => {
         // Try to switch to the Mumbai testnet
         await window.ethereum.request({
           method: "wallet_switchEthereumChain",
-          params: [{ chainId: "0x539" }], // Check networks.js for hexadecimal network ids
+          params: [{ chainId: "0x13881" }], // Check networks.js for hexadecimal network ids
         });
       } catch (error) {
         // This error code means that the chain we want has not been added to MetaMask
@@ -111,27 +111,27 @@ const Navbar = () => {
             await window.ethereum.request({
               method: "wallet_addEthereumChain",
               params: [
-                // {
-                //   chainId: "0x13881",
-                //   chainName: "Polygon Mumbai Testnet",
-                //   rpcUrls: ["https://rpc-mumbai.maticvigil.com/"],
-                //   nativeCurrency: {
-                //     name: "Mumbai Matic",
-                //     symbol: "MATIC",
-                //     decimals: 18,
-                //   },
-                //   blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
-                // },
                 {
-                  chainId:"0x539",
-                  chainName:"Local Host Network",
-                  rpcUrls:['http://127.0.0.1:8545/'],
-                  nativeCurrency:{
-                    name:"ETH",
-                    symbol:"ETH",
-                    decimals:18
-                  }
-                }
+                  chainId: "0x13881",
+                  chainName: "Polygon Mumbai Testnet",
+                  rpcUrls: ["https://rpc-mumbai.maticvigil.com/"],
+                  nativeCurrency: {
+                    name: "Mumbai Matic",
+                    symbol: "MATIC",
+                    decimals: 18,
+                  },
+                  blockExplorerUrls: ["https://mumbai.polygonscan.com/"],
+                },
+                // {
+                //   chainId:"0x539",
+                //   chainName:"Local Host Network",
+                //   rpcUrls:['http://127.0.0.1:8545/'],
+                //   nativeCurrency:{
+                //     name:"ETH",
+                //     symbol:"ETH",
+                //     decimals:18
+                //   }
+                // }
               ],
             });
             return;

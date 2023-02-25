@@ -32,3 +32,23 @@
     padding:4px 12px;
     border-radius: 10px;
 }
+#modalOverlay{
+    background-color: #217d4d2a;
+}
+.modal{
+    background-color: #e7e7e7b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modal input{
+    width: 100%;
+    padding:4px;
+    border-radius: 10px;
+    margin:4px 0;
+}
+.modal button{
+    background-color: #217D4D;
+    color:white
+}

@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     hardhat: {
     },
-    polygon_mumbai: {
+    matic: {
       url: `https://rpc-mumbai.maticvigil.com/v1/${process.env.MATIC_KEY}`,
       accounts: [process.env.PRIVATE_KEY]
     }
