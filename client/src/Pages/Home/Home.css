@@ -1,0 +1,47 @@
+.HomeWrapper{
+    height:80vh;
+    background-image: url("../../assets/LandingPage.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; 
+    display: flex;
+}
+#allLeftWrap{
+    margin-top: 10vh;
+    width:30vw;
+    margin-left: 5vw;
+    height:50%;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#textAreaHome{
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#upperText{
+    font-size: 1.5rem;
+}
+#upperText span{
+    color:#1D5E2F
+}
+#lowerText{
+    font-size: 1rem;
+}
+.homeButtons{
+    background-color: #C8F1D4;
+    display: flex;
+    align-items: center ;
+    padding: 1vh 1vw;
+    border-radius: 10px;
+}
+#walletIcon{
+    height:2vh
+}
+#homePageButtonWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}

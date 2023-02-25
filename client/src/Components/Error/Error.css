@@ -1,0 +1,26 @@
+.errorWrapper{
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainError{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90%;
+}
+#errorImage{
+    height:60vh;
+}
+#errorMessage{
+    font-size: 1.4rem;
+}
+#errorButton{
+    background-color: #217D4D;
+    padding:4px 8px;
+    border-radius: 10px;
+    color:white;
+    font-size: 0.8rem;
+}

@@ -1,0 +1,30 @@
+.navBarWrapper{
+    display: flex;
+    flex-direction: row;
+    height:20vh;
+    padding:2vw;
+    align-items: center;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+}
+#logoNavbar{
+    height:15vh;
+}
+#logoWrapper{
+    width:30vw;
+}
+.navBarLinks{
+    margin:0 2vw;
+}
+#connectToWalletButton{
+    width:8vw;
+    font-size:0.8rem;
+}
+#linkHolder{
+    display: flex;
+    align-items: center;
+    width:65vw;
+    justify-content: flex-end;
+}
